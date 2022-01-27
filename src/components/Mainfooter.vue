@@ -1,25 +1,19 @@
 <template>
   <div class="">
-    <Topfooter/> 
-    <Mainfooter/> 
-    <Endfooter/> 
+    <div class="container">
+
+    </div>
   </div>
 </template>
 
 <script>
-import Topfooter from './Topfooter.vue'
-import Mainfooter from './Mainfooter.vue'
-import Endfooter from './Endfooter.vue'
-
 export default {
-  name: 'Footer',
+  name: 'Topfooter',
   props: {
     msg: String
   },
   components: {
-    Topfooter,
-    Mainfooter,
-    Endfooter
+    
   }
 }
 </script>
@@ -27,6 +21,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container{
-  height: 600px;
+  height: 400px;
+  background-color: red;
 }
 </style>

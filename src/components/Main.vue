@@ -18,7 +18,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container{
-  min-height: calc(100vh - var(--height1) - 600px);
+  min-height: calc(100vh - var(--height1) - 700px);
   background-color: black;
   padding-top: 10px;
   padding-bottom: 10px;
