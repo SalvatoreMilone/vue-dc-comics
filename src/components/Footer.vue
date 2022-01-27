@@ -19,6 +19,6 @@ export default {
 <style scoped lang="scss">
 .container{
   height: 600px;
-  background-color: blue;
+  background-color: var(--maincolor);
 }
 </style>
