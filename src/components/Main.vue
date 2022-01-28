@@ -1,10 +1,14 @@
 <template>
   <div class="all">
+        <div class="jumbotron"></div>
     <div class="container">
-         <Comicssection v-for="comic in comics"
-         :img="comic.thumb"
-         :series="comic.series"
-         :key="comic"/>
+
+
+        <Comicssection v-for="comic in comics"
+        :img="comic.thumb"
+        :series="comic.series"
+        :key="comic"/>
+
     </div>
   </div>
 </template>
@@ -117,5 +121,14 @@ export default {
       color: white;
       font-size: 28px;
   }
+}
+
+.jumbotron{
+  height: 400px;
+  width: 100%;
+  background-image: url(../assets/img/jumbotron.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 </style>

@@ -22,8 +22,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .comic{
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   overflow: hidden;
   margin-bottom: 5px;
 
@@ -33,7 +33,7 @@ export default {
 }
 
 .comic-container{
-  width: 200px;
-    margin: 14px 5px;
+  width: 150px;
+    margin: 15px;
 }
 </style>
