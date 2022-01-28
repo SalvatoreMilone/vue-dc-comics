@@ -2,11 +2,10 @@
   <div class="">
     <div class="container">
       <div class="icons">
-        <div><img src="../assets/img/buy-comics-digital-comics.png">DIGITAL COMICS</div>
-        <div><img src="../assets/img/buy-comics-merchandise.png">DC MERCHANDISE</div>
-        <div><img src="../assets/img/buy-comics-subscriptions.png">SUBSCRIPTION</div>
-        <div><img src="../assets/img/buy-comics-shop-locator.png">COMIC SHOP LOCATOR</div>
-        <div><img src="../assets/img/buy-dc-power-visa.svg">DC POWER VISA</div>
+        <div v-for="(element, index) in links" :key="index">
+          <img :src="element.url" :alt="element.text">
+          {{element.text}}
+        </div>
       </div>
     </div>
   </div>
@@ -18,8 +17,31 @@ export default {
   props: {
     msg: String
   },
-  components: {
-    
+   data() {
+    return{
+      links: [
+        {
+          text: "DIGITAL COMICS",
+          url: require('../assets/img/buy-comics-digital-comics.png'),
+        },
+        {
+          text: "DC MERCHANDISE",
+          url: require('../assets/img/buy-comics-merchandise.png'),
+        },
+        {
+          text: "SUBSCRIPTION",
+          url: require('../assets/img/buy-comics-subscriptions.png'),
+        },
+        {
+          text: "COMIC SHOP LOCATOR",
+          url: require('../assets/img/buy-comics-shop-locator.png'),
+        },
+        {
+          text: "DC POWER VISA",
+          url: require('../assets/img/buy-dc-power-visa.svg'),
+        },
+      ]
+    }
   }
 }
 </script>
