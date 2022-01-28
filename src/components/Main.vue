@@ -1,6 +1,8 @@
 <template>
   <div class="all">
-        <div class="jumbotron"></div>
+        <div class="jumbotron">
+          <button>CURRENT SERIES</button>
+        </div>
     <div class="container">
 
 
@@ -8,6 +10,10 @@
         :img="comic.thumb"
         :series="comic.series"
         :key="comic"/>
+
+      <div class="btncontainer">
+        <button>LOAD MORE</button>
+      </div>
 
     </div>
   </div>
@@ -109,8 +115,8 @@ export default {
 .container{
   min-height: calc(100vh - var(--height1) - 700px);
   background-color: #1c1c1c;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -130,5 +136,34 @@ export default {
   background-size:cover;
   background-repeat: no-repeat;
   background-position: top;
+  position: relative;
+
+  button{
+  position: absolute;
+  bottom: -20px;
+  left: 165px;
+  }
+}
+
+button{
+  padding: 10px 15px;
+  background-color: var(--maincolor);
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 200ms;
+
+  &:hover{
+    background-color: rgb(0, 179, 255);
+  }
+}
+
+.btncontainer{
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
